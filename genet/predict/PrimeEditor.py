@@ -1481,9 +1481,9 @@ class DeepPrimeOff:
 
             # for strand == '+'
             if '+' in strands : 
-            df_strand_fwd = chr_strand_grouped.get_group('+').copy()
-            df_strand_fwd['Off74_context'] = df_strand_fwd['Position'].apply(lambda pos: fasta[pos-4:pos-4+seq_length])
-            list_df_out.append(df_strand_fwd)
+                df_strand_fwd = chr_strand_grouped.get_group('+').copy()
+                df_strand_fwd['Off74_context'] = df_strand_fwd['Position'].apply(lambda pos: fasta[pos-4:pos-4+seq_length])
+                list_df_out.append(df_strand_fwd)
 
             # for strand == '-'
             if '-' in strands : 
